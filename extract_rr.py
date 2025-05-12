@@ -4,7 +4,7 @@ import neurokit2 as nk
 
 def main():
     
-    # Set this variable to True if you want to generate the RR intervals. Set it to False if you want
+    # Set this variable to False if you want to generate the RR intervals. Set it to True if you want
     # to plot the signal and the RR intervals
     generate_rr = False
     
@@ -12,7 +12,7 @@ def main():
     fs = 250
     
     # Retrieve the recording
-    ecg_signal = np.genfromtxt('/home/rocknd79/EPFL/MA4/SSDP/SSDP-LombScargle/Roman-Recording-2.csv', delimiter=',')[1:]
+    ecg_signal = np.genfromtxt('Roman-Recording-2.csv', delimiter=',')[1:]
     
     # Size of the signal
     N = ecg_signal.shape[0]
